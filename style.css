@@ -177,3 +177,36 @@ transform: translateY(-40px);
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
 }
+@media (max-width: 768px) {
+    .letter-window {
+        width: 90vw;           /* Take up almost full width */
+        aspect-ratio: unset;   /* Remove fixed ratio so it can grow tall */
+        min-height: 60vh;      /* Ensure it's tall enough for content */
+        background-size: 100% 100%; /* Stretch the window bg to fit */
+        padding-top: 100px;    /* Reduce top padding */
+    }
+/* for mobile version this is the changes made */
+    h1 {
+        font-size: 24px;       /* Smaller title */
+        transform: translateY(-30px);
+    }
+
+    p {
+        font-size: 20px;       /* Smaller text */
+    }
+
+    .cat {
+        width: 140px;          /* Smaller cat */
+        transform: translateY(-20px);
+    }
+
+    .yes-btn, .no-btn {
+        width: 70px;           /* Smaller buttons */
+        transform: translateY(-10px);
+    }
+    
+    /* Make the envelope smaller on start screen */
+    #envelope {
+        width: 150px;
+    }
+}
